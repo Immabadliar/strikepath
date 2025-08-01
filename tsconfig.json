@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		// required
 		"allowSyntheticDefaultImports": true,
 		"downlevelIteration": true,
 		"jsx": "react",
@@ -16,11 +15,12 @@
 		"strict": true,
 		"target": "ESNext",
 		"typeRoots": ["node_modules/@rbxts"],
-
-		// configurable
 		"rootDir": "src",
 		"outDir": "out",
 		"baseUrl": "src",
+		"paths": {
+			"*": ["*", "client/*", "server/*", "shared/*"]
+		},
 		"incremental": true,
 		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo"
 	}
